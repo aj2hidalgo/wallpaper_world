@@ -109,6 +109,10 @@ img {
   overflow: hidden;
 }
 
+.col-lg-2 {
+  width: 25%;
+}
+
 /* 
 ---------------------------------------------
 Global Styles
@@ -652,7 +656,7 @@ Banner Style
 
 .main-banner {
   background-image: url(../images/Animated\ Shape\ \(1\).svg);
-  border-radius: 0px 0px 150px 150px;
+  border-radius: 0px 0px 50px 50px;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
