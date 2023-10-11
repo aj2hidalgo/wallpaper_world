@@ -12,6 +12,10 @@
 
     <title>Wallpaper World | Shop</title>
 
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+      rel='stylesheet'>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,13 +26,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <!--
 
-TemplateMo 589 lugx gaming
-
-https://templatemo.com/tm-589-lugx-gaming
-
--->
   </head>
 
   <body>
@@ -46,268 +44,389 @@ https://templatemo.com/tm-589-lugx-gaming
     </div>
     <!-- ***** Preloader End ***** -->
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt style="width: 158px;">
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="shop.html" class="active">Tienda</a></li>
-                <li><a href="product-details.html">Detalles del Producto</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="#">Registrase</a></li>
-              </ul>
-              <a class='menu-trigger'>
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
+    <!-- Sidebar -->
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class><img src="./assets/images/Logo_Blanco.png"
+            alt style="width: 25%;"></i>
+        <span class="logo_name">Wallpaper</span>
       </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+      <ul class="nav-links">
 
-    <div class="page-heading header-text">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h3>Our Shop</h3>
-            <span class="breadcrumb"><a href="#">Home</a> > Our Shop</span>
-          </div>
-        </div>
-      </div>
-    </div>
+        <li>
+          <a>
+            <i class='bx bx-menu' style='color:#ffffff'></i>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name">Expandir</a></li>
+          </ul>
+        </li>
 
-    <div class="section trending">
-      <div class="container">
-        <ul class="trending-filter">
-          <li>
-            <a class="is_active" href="#!" data-filter="*">Show All</a>
-          </li>
-          <li>
-            <a href="#!" data-filter=".adv">Adventure</a>
-          </li>
-          <li>
-            <a href="#!" data-filter=".str">Strategy</a>
-          </li>
-          <li>
-            <a href="#!" data-filter=".rac">Racing</a>
-          </li>
-        </ul>
-        <div class="row trending-box">
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-01.jpg" alt></a>
-                <span class="price"><em>$36</em>$24</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
+        <li>
+          <a href="./index.html">
+            <i class='bx bx-home-smile' style='color:#ffffff'></i>
+            <span class="link_name">Inicio</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="./index.html">Inicio</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-collection'></i>
+              <span class="link_name">Categoria</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
           </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-02.jpg" alt></a>
-                <span class="price"><em>$32</em>$22</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-03.jpg" alt></a>
-                <span class="price"><em>$45</em>$30</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-04.jpg" alt></a>
-                <span class="price"><em>$32</em>$22</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-03.jpg" alt></a>
-                <span class="price"><em>$38</em>$26</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-01.jpg" alt></a>
-                <span class="price"><em>$30</em>$20</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-04.jpg" alt></a>
-                <span class="price"><em>$32</em>$22</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-02.jpg" alt></a>
-                <span class="price"><em>$32</em>$22</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-03.jpg" alt></a>
-                <span class="price"><em>$28</em>$20</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-04.jpg" alt></a>
-                <span class="price"><em>$26</em>$18</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-01.jpg" alt></a>
-                <span class="price"><em>$32</em>$24</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
-            <div class="item">
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/trending-02.jpg" alt></a>
-                <span class="price"><em>$45</em>$30</span>
-              </div>
-              <div class="down-content">
-                <span class="category">Action</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="pagination">
-              <li><a href="#"> &lt; </a></li>
-              <li><a href="#">1</a></li>
-              <li><a class="is_active" href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#"> &gt; </a></li>
+          <ul class="sub-menu">
+            <ul class="trending-filter">
+              <li>
+                <a class="is_active" href="#!" data-filter="*">Todos</a>
+              </li>
+              <li>
+                <a href="#!" data-filter=".adv">Anime</a>
+              </li>
+              <li>
+                <a href="#!" data-filter=".str">Naturaleza</a>
+              </li>
+              <li>
+                <a href="#!" data-filter=".rac">Vehiculos</a>
+              </li>
             </ul>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class='bx bxl-android' style='color:#ffffff'></i>
+            <span class="link_name">Android</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Android</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class='bx bxl-apple' style='color:#ffffff'></i>
+            <span class="link_name">Apple</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Apple</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class='bx bx-desktop'></i>
+            <span class="link_name">Pc</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Pc</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-area'></i>
+              <span class="link_name">Resolucion</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Resolucion</a></li>
+            <li><a href="#">4k</a></li>
+            <li><a href="#">FullHD</a></li>
+            <li><a href="#">HD</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class='bx bx-conversation' style='color:#ffffff'></i>
+            <span class="link_name">Contacto</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="contact.html">Contacto</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-history'></i>
+            <span class="link_name">Historia</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Historia</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="link_name">Configuracion</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Configuracion</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Adan Hidalgo</div>
+              <div class="job">Desarollador web</div>
+            </div>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+
+      <div class="page-heading-shop header-text">
+        <!-- Header search -->
+        <nav class="navbar">
+          <div class="container-fluid">
+            <a href></a>
+            <form class="d-flex" role="search">
+              <a href="./product-details.html" style="width: 25%;">
+                <img src="./assets/images/bx-shopping-bag.svg" alt>
+              </a>
+              <input class="form-control me-2" type="search"
+                placeholder="Search"
+                aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+
+            </form>
+          </div>
+        </nav>
+        <!-- End -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3>Nuestra Tienda</h3>
+              <span class="breadcrumb"><a href="/index.html">Inicio</a> >Tienda</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <footer>
-      <div class="container">
-        <div class="col-lg-12">
-          <p>Copyright © 2048 LUGX Gaming Company. All rights reserved.
-            &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com"
-              target="_blank">Design: TemplateMo</a></p>
+      <div class="section trending">
+        <div class="container">
+          <div class="row trending-box">
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/1232615372615.jpg" alt></a>
+                  <span class="price"><em>$36</em>$24</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/1695307473508.jpg" alt></a>
+                  <span class="price"><em>$32</em>$22</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/1695309308282.jpg" alt></a>
+                  <span class="price"><em>$45</em>$30</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/1695313080674.jpg" alt></a>
+                  <span class="price"><em>$32</em>$22</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/1695336274715.jpg" alt></a>
+                  <span class="price"><em>$38</em>$26</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/andy-holmes-UHPz0nR_3IA-unsplash.jpg"
+                      alt></a>
+                  <span class="price"><em>$30</em>$20</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/chuttersnap-gts_Eh4g1lk-unsplash.jpg"
+                      alt></a>
+                  <span class="price"><em>$32</em>$22</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/vadym-chumak-KFJym8RTh1E-unsplash.jpg"
+                      alt></a>
+                  <span class="price"><em>$32</em>$22</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/power.jpg" alt></a>
+                  <span class="price"><em>$28</em>$20</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/pexels-pixabay-60597.jpg" alt></a>
+                  <span class="price"><em>$26</em>$18</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/1695352795582.jpg" alt></a>
+                  <span class="price"><em>$32</em>$24</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+              <div class="item">
+                <div class="thumb">
+                  <a href="product-details.html"><img
+                      src="assets/images/fondos/erik-mclean-ZRns2R5azu0-unsplash.jpg"
+                      alt></a>
+                  <span class="price"><em>$45</em>$30</span>
+                </div>
+                <div class="down-content">
+                  <span class="category">Action</span>
+                  <h4>Assasin Creed</h4>
+                  <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="pagination">
+                <li><a href="#"> &lt; </a></li>
+                <li><a href="#">1</a></li>
+                <li><a class="is_active" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"> &gt; </a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+      <footer>
+        <div class="container">
+          <div class="col-lg-12">
+            <p>Copyright © 2022 Wallpaper World. All rights reserved.
+              &nbsp;&nbsp;
+              <a rel="nofollow" href target="_blank">Developer: Aj2Hidalgo</a></p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <div class="one"></div>
+    <!-- End Sidebar -->
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
@@ -317,6 +436,18 @@ https://templatemo.com/tm-589-lugx-gaming
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      $(".arrow").click(function(e) {
+  let arrowParent = $(e.target).parent().parent(); // seleccionar el elemento padre principal de la flecha
+  arrowParent.toggleClass("showMenu");
+});
+
+$(".bx-menu").click(function() {
+  $(".sidebar").toggleClass("close");
+});
+
+      </script>
 
   </body>
 </html>
