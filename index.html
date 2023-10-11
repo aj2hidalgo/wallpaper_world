@@ -4,8 +4,11 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
 
     <title>Wallpaper World | Inicio</title>
 
@@ -14,379 +17,406 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/templatemo-wallpaper-world.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 589 lugx gaming
-
-https://templatemo.com/tm-589-lugx-gaming
-
--->
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   </head>
 
-<body>
+  <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+    <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
         <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/Logo_Titulo_Blanco.png" alt="" style="width: 200px;">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">inicio</a></li>
-                      <li><a href="shop.html">Categorias</a></li>
-                      <li><a href="product-details.html">Detalles del Producto</a></li>
-                      <li><a href="contact.html">Contacto</a></li>
-                      <li><a href="#">Registrase</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/Logo_Titulo_Blanco.png" alt
+                  style="width: 200px;">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li><a href="index.html" class="active">inicio</a></li>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="product-details.html">Detalles del Producto</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><button id="registerButton" class="btn-12"><span>Registrarse</span></button></li>
 
-  <div class="main-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center" style="text-align: center;">
-          <div class="caption header-text">
-            <h6>Los Mejores Fondos</h6>
-            <h2>Encuentra los mejores fondos de pantalla que vaya mas contigo!</h2>
-            <!-- <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p> -->
-            <!-- <div class="search-input">
+                <div id="registerModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="form-container">
+                      <p class="title">Registrate</p>
+                      <form class="form">
+                        <div class="input-group">
+                          <label for="username">Usuario</label>
+                          <input type="text" name="username" id="username"
+                            placeholder>
+                        </div>
+                        <div class="input-group">
+                          <label for="username">Email</label>
+                          <input type="email" name="email" id="email"
+                            placeholder>
+                        </div>
+                        <div class="input-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" id="password"
+                            placeholder>
+                        </div>
+                        <button class="sign">Sign up</button>
+                      </form>
+                      <div class="social-message">
+                        <div class="line"></div>
+                        <p class="message">Login with social accounts</p>
+                        <div class="line"></div>
+                      </div>
+                      <div class="social-icons">
+                        <button aria-label="Log in with Google" class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                            <path
+                              d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+                          </svg>
+                        </button>
+                        <button aria-label="Log in with Twitter" class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                            <path
+                              d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+                          </svg>
+                        </button>
+                        <button aria-label="Log in with GitHub" class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                            <path
+                              d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <a rel="noopener noreferrer" href="#"
+                        style="color: #f0891f;">Sign in</a>
+
+                    </div>
+                  </div>
+                </div>
+
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center" style="text-align: center;">
+            <div class="caption header-text">
+              <h6>Los Mejores Fondos</h6>
+              <h2>Encuentra los mejores fondos de pantalla que vaya mas contigo!</h2>
+              <!-- <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p> -->
+              <!-- <div class="search-input">
               <form id="search" action="#">
                 <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                 <button role="button">Search Now</button>
               </form>
             </div> -->
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-2">
-          <div class="right-image">
-            <img src="assets/images/fondos/pexels-craig-adderley-1563356.jpg" alt="">
-            <span class="price">$2</span>
-            <span class="offer">-50%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6" style="width: 33.33% !important;">
-          <a href="#">
-            <div class="item">
-              <div class="image">
-                <i class="fa-solid fa-desktop fa-beat fa-2xl" style="color: #ffffff;"></i>
-              </div>
-              <h4>Pc</h4>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6" style="width: 33.33% !important;">
-          <a href="#">
-            <div class="item">
-              <div class="image">
-                <i class="fa-solid fa-mobile-screen-button fa-2xl" style="color: #ffffff;"></i>
-              </div>
-              <h4>Mobile</h4>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6" style="width: 33.33% !important;">
-          <a href="#">
-            <div class="item">
-              <div class="image">
-                <i class="fa-regular fa-image fa-2xl" style="color: #ffffff;"></i>
-                <!-- <img src="./assets/images/" alt="img-resolucion"> -->
-              </div>
-              <h4>Resolucion</h4>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="section trending">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-heading">
-            <h6>Trending</h6>
-            <h2>Trending Games</h2>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="main-button">
-            <a href="shop.html">View All</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$28</em>$20</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price">$44</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$64</em>$44</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price">$32</span>
-            </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+          <div class="col-lg-4 offset-lg-2">
+            <div class="right-image">
+              <img src="assets/images/fondos/pexels-craig-adderley-1563356.jpg"
+                alt>
+              <span class="price">$2</span>
+              <span class="offer">-50%</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
 
-  <div class="section most-played">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-heading">
-            <h6>TOP Wallpaper</h6>
-            <h2>Most</h2>
+    <div class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6" style="width: 33.33% !important;">
+            <a href="#">
+              <div class="item">
+                <div class="image">
+                  <i class="fa-solid fa-desktop fa-beat fa-2xl"
+                    style="color: #ffffff;"></i>
+                </div>
+                <h4>Pc</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6" style="width: 33.33% !important;">
+            <a href="#">
+              <div class="item">
+                <div class="image">
+                  <i class="fa-solid fa-mobile-screen-button fa-2xl"
+                    style="color: #ffffff;"></i>
+                </div>
+                <h4>Mobile</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6" style="width: 33.33% !important;">
+            <a href="#">
+              <div class="item">
+                <div class="image">
+                  <i class="fa-regular fa-image fa-2xl" style="color: #ffffff;"></i>
+                  <!-- <img src="./assets/images/" alt="img-resolucion"> -->
+                </div>
+                <h4>Resolucion</h4>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="main-button">
-            <a href="shop.html">View All</a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/fondos/1695309308282.jpg" alt="anime"></a>
+      </div>
+    </div>
+
+    <div class="section most-played">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h6>TOP Wallpaper</h6>
+              <h2>Most</h2>
             </div>
-            <div class="down-content">
+          </div>
+          <div class="col-lg-6">
+            <div class="main-button">
+              <a href="shop.html">View All</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb card-most">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/1695309308282.jpg" alt="anime"></a>
+              </div>
+              <div class="down-content">
                 <span class="category">Anime</span>
                 <h4>Arte Japones</h4>
                 <a href="product-details.html">Explore</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/fondos/pexels-pixabay-326055.jpg" alt="naturaleza" style="width: 680px;"></a>
-            </div>
-            <div class="down-content">
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb card-most">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/deanna-deshea-rPiqLTkfe6Q-unsplash.jpg"
+                    alt="naturaleza"></a>
+              </div>
+              <div class="down-content">
                 <span class="category">Naturaleza</span>
                 <h4>Paisaje</h4>
                 <a href="product-details.html">Explore</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/fondos/ideogram_(1)-_lFN9nys--transformed000.jpeg" alt="Cartoon" style="width: 620px;margin-left: -160px;"></a>
-            </div>
-            <div class="down-content">
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb card-most">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/1695307473508.jpg"
+                    alt="Cartoon"></a>
+              </div>
+              <div class="down-content">
                 <span class="category">Cartoon</span>
                 <h4>Comic</h4>
                 <a href="product-details.html">Explore</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb" style="height: 390px;">
-              <a href="product-details.html"><img src="assets/images/fondos/1695352795582.jpg" alt="Accion"></a>
-            </div>
-            <div class="down-content">
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="item">
+              <div class="thumb card-most">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/1695352795582.jpg" alt="Accion"></a>
+              </div>
+              <div class="down-content">
                 <span class="category">Accion</span>
                 <h4>Ficcion</h4>
                 <a href="product-details.html">Explore</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section categories">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Categories</h6>
-            <h2>Top Categories</h2>
-          </div>
-        </div>
-        <div class="col-lg col-sm-6 col-xs-12">
-          <div class="item">
-            <h4>Animales</h4>
-            <div class="thumb" style="height: 170px;">
-              <a href="product-details.html"><img src="assets/images/fondos/vadym-chumak-KFJym8RTh1E-unsplash.jpg" alt="animales"  style=" margin-top: -35%;"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg col-sm-6 col-xs-12">
-          <div class="item">
-            <h4>Coches</h4>
-            <div class="thumb" style="height: 170px;">
-              <a href="product-details.html"><img src="assets/images/fondos/josh-berquist-_4sWbzH5fp8-unsplash.jpg" alt="coches" style=" margin-top: -30%;"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg col-sm-6 col-xs-12">
-          <div class="item">
-            <h4>Espacio</h4>
-            <div class="thumb" style="height: 170px;">
-              <a href="product-details.html"><img src="assets/images/fondos/pexels-pixabay-2150.jpg" alt="Espacio"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg col-sm-6 col-xs-12">
-          <div class="item">
-            <h4>Anime</h4>
-            <div class="thumb" style="height: 170px;">
-              <a href="product-details.html"><img src="assets/images/fondos/kjhklliu.jpg" alt="anime"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg col-sm-6 col-xs-12">
-          <div class="item">
-            <h4>Render 3D</h4>
-            <div class="thumb" style="height: 170px;">
-              <a href="product-details.html"><img src="assets/images/fondos/sufyan-O14TxnU2qtM-unsplash.jpg" alt="render"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="section cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="shop">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h6>Our Shop</h6>
-                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
-                </div>
-                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
-                <div class="main-button">
-                  <a href="shop.html">Shop Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 offset-lg-2 align-self-end">
-          <div class="subscribe">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h6>NEWSLETTER</h6>
-                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
-                </div>
-                <div class="search-input">
-                  <form id="subscribe" action="#">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
-                    <button type="submit">Subscribe Now</button>
-                  </form>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+    <div class="section categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h6>Categories</h6>
+              <h2>Top Categories</h2>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 col-xs-12">
+            <div class="item">
+              <h4>Animales</h4>
+              <div class="thumb" style="height: 160px;">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/jonas-smFMnxV6wkc-unsplash.jpg"
+                    alt="animales"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 col-xs-12">
+            <div class="item">
+              <h4>Coches</h4>
+              <div class="thumb" style="height: 160px;">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/chuttersnap-gts_Eh4g1lk-unsplash.jpg"
+                    alt="coches"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 col-xs-12">
+            <div class="item">
+              <h4>Espacio</h4>
+              <div class="thumb" style="height: 160px;">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/pexels-pixabay-2150.jpg"
+                    alt="Espacio"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 col-xs-12">
+            <div class="item">
+              <h4>Anime</h4>
+              <div class="thumb" style="height: 160px;">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/kjhklliu.jpg" alt="anime"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 col-xs-12">
+            <div class="item">
+              <h4>Render 3D</h4>
+              <div class="thumb" style="height: 160px;">
+                <a href="product-details.html"><img
+                    src="assets/images/fondos/the-halal-design-studio-gxDwmj6R3f4-unsplash.jpg"
+                    alt="render"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
+    <div class="section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="shop">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="section-heading">
+                    <h6>Nuestra Tienda</h6>
+                    <h2>Consigue Tu Descuento y Mejor <em>Precio</em> Solo Para
+                      Ti!</h2>
+                  </div>
+                  <div class="main-button">
+                    <a href="shop.html">Tienda</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-2 align-self-end">
+            <div class="subscribe">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="section-heading">
+                    <h6>Registrate</h6>
+                    <h2>Obten un Cupo de 10$ al <em>Registrate</em>!</h2>
+                  </div>
+                  <div class="search-input">
 
+                    <button id="registerButton" class="btn-12"><span>Registrarse</span></button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <p>Copyright © 2022 Wallpaper World. All rights reserved. &nbsp;&nbsp;
+            <a rel="nofollow" href target="_blank">Developer: Aj2Hidalgo</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+        const registerButton = $("#registerButton");
+        const registerModal = $("#registerModal");
+        const closeButton = $(".close");
+      
+        registerButton.click(function() {
+          registerModal.css("display", "flex");
+        });
+      
+        closeButton.click(function() {
+          registerModal.hide();
+        });
+      
+        $(window).click(function(event) {
+          if (event.target == registerModal[0]) {
+            registerModal.hide();
+          }
+        });
+      });
+      
+    </script>
   </body>
 </html>
