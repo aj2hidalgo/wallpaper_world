@@ -879,6 +879,31 @@ Header Style
   }
 }
 
+/* Scroll */
+
+body::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+  height: 8px; /* Tamaño del scroll en horizontal */
+  display: block; /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+  background: #008af8;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
 /* Sidebar */
 
 .sidebar {
@@ -1749,7 +1774,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  background-image: url(../images/Animated.svg);
   border-radius: 0px 0px 150px 150px;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -2103,7 +2128,7 @@ Single Page Style
   margin-top: 30px;
 }
 
-.related-games .main-button {
+.related-wallpaper .main-button {
   text-align: right;
   margin-top: 32px;
 }
@@ -2252,7 +2277,7 @@ body {
   .trending .main-button,
   .cta::after,
   .most-played .main-button,
-  .related-games .main-button {
+  .related-wallpaper .main-button {
     display: none;
   }
   .most-played .section-heading {

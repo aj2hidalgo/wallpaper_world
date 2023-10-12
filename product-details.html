@@ -12,6 +12,8 @@
 
     <title>Wallpaper World | Product Detail</title>
 
+    <link rel="icon" href="assets/images/Logo_Blanco.png" type="image/x-icon">
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,13 +24,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <!--
 
-TemplateMo 589 lugx gaming
-
-https://templatemo.com/tm-589-lugx-gaming
-
--->
   </head>
 
   <body>
@@ -54,7 +50,8 @@ https://templatemo.com/tm-589-lugx-gaming
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
               <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt style="width: 158px;">
+                <img src="assets/images/Logo_Titulo_Blanco.png" alt
+                  style="width: 200px;">
               </a>
               <!-- ***** Logo End ***** -->
               <!-- ***** Menu Start ***** -->
@@ -64,7 +61,67 @@ https://templatemo.com/tm-589-lugx-gaming
                 <li><a href="product-details.html" class="active">Detalles del
                     Producto</a></li>
                 <li><a href="contact.html">Contacto</a></li>
-                <li><a href="#">Registrase</a></li>
+                <li><button id="registerButton" class="btn-12"><span>Registrarse</span></button></li>
+
+                <div id="registerModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="form-container">
+                      <p class="title">Registrate</p>
+                      <form class="form">
+                        <div class="input-group">
+                          <label for="username">Usuario</label>
+                          <input type="text" name="username" id="username"
+                            placeholder>
+                        </div>
+                        <div class="input-group">
+                          <label for="username">Email</label>
+                          <input type="email" name="email" id="email"
+                            placeholder>
+                        </div>
+                        <div class="input-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" id="password"
+                            placeholder>
+                        </div>
+                        <button class="sign">Sign up</button>
+                      </form>
+                      <div class="social-message">
+                        <div class="line"></div>
+                        <p class="message">Login with social accounts</p>
+                        <div class="line"></div>
+                      </div>
+                      <div class="social-icons">
+                        <button aria-label="Log in with Google" class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                            <path
+                              d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+                          </svg>
+                        </button>
+                        <button aria-label="Log in with Twitter" class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                            <path
+                              d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+                          </svg>
+                        </button>
+                        <button aria-label="Log in with GitHub" class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                            <path
+                              d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <a rel="noopener noreferrer" href="#"
+                        style="color: #f0891f;">Sign in</a>
+
+                    </div>
+                  </div>
+                </div>
+
               </ul>
               <a class='menu-trigger'>
                 <span>Menu</span>
@@ -81,9 +138,9 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h3>Modern Warfare® II</h3>
+            <h3>Detalles del Producto</h3>
             <span class="breadcrumb"><a href="#">Home</a> > <a href="#">Shop</a>
-              > Assasin Creed</span>
+              > Anime</span>
           </div>
         </div>
       </div>
@@ -94,28 +151,25 @@ https://templatemo.com/tm-589-lugx-gaming
         <div class="row">
           <div class="col-lg-6">
             <div class="left-image">
-              <img src="assets/images/single-game.jpg" alt>
+              <img src="assets/images/fondos/lkjalskjd.jpg" alt>
             </div>
           </div>
           <div class="col-lg-6 align-self-center">
-            <h4>Call of Duty®: Modern Warfare® II</h4>
-            <span class="price"><em>$28</em> $22</span>
-            <p>LUGX Gaming Template is based on the latest Bootstrap 5 CSS
-              framework. This template is provided by TemplateMo and it is
-              suitable for your gaming shop ecommerce websites. Feel free to use
-              this for any purpose. Thank you.</p>
+            <h4>Shinobu Kōcho</h4>
+            <span class="price"><em>$10</em> $8</span>
+            <p>Shinobu Kocho es un personaje
+              secundario importante dentro de la franquicia de Kimetsu no Yaiba.
+              Shinobu fue una Cazadora de Demonios que se desempeñaba como uno
+              de los Pilares; ella ocupó el puesto como el Pilar del Insecto.</p>
             <form id="qty" action="#">
-              <input type="qty" class="form-control" id="1"
-                aria-describedby="quantity" placeholder="1">
-              <button type="submit"><i class="fa fa-shopping-bag"></i> ADD TO
-                CART</button>
+              <button type="submit"><i class="fa fa-shopping-bag"></i>PRO</button>
             </form>
             <ul>
-              <li><span>Game ID:</span> COD MMII</li>
-              <li><span>Genre:</span> <a href="#">Action</a>, <a href="#">Team</a>,
-                <a href="#">Single</a></li>
-              <li><span>Multi-tags:</span> <a href="#">War</a>, <a href="#">Battle</a>,
-                <a href="#">Royal</a></li>
+              <li><span>ID:</span>126009</li>
+              <li><span>Genre:</span> <a href="#">Anime</a>, <a href="#">Otaku</a>,
+                <a href="#">Render3D</a></li>
+              <li><span>Resolucion:</span> <a href="#">4K</a>, <a href="#">FullHD</a>,
+                <a href="#">HD</a></li>
             </ul>
           </div>
           <div class="col-lg-12">
@@ -150,126 +204,177 @@ https://templatemo.com/tm-589-lugx-gaming
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="description"
                     role="tabpanel" aria-labelledby="description-tab">
-                    <p>You can search for more templates on Google Search using
-                      keywords such as "templatemo digital marketing",
-                      "templatemo one-page", "templatemo gallery", etc. Please
-                      tell your friends about our website. If you need a variety
-                      of HTML templates, you may visit Tooplate and Too CSS
-                      websites.</p>
-                    <br>
-                    <p>Coloring book air plant shabby chic, crucifix normcore
-                      raclette cred swag artisan activated charcoal. PBR&B fanny
-                      pack pok pok gentrify truffaut kitsch helvetica jean
-                      shorts edison bulb poutine next level humblebrag la croix
-                      adaptogen. Hashtag poke literally locavore, beard marfa
-                      kogi bruh artisan succulents seitan tonx waistcoat
-                      chambray taxidermy. Same cred meggings 3 wolf moon lomo
-                      irony cray hell of bitters asymmetrical gluten-free art
-                      party raw denim chillwave tousled try-hard succulents
-                      street art.</p>
-                  </div>
-                  <div class="tab-pane fade" id="reviews" role="tabpanel"
-                    aria-labelledby="reviews-tab">
-                    <p>Coloring book air plant shabby chic, crucifix normcore
-                      raclette cred swag artisan activated charcoal. PBR&B fanny
-                      pack pok pok gentrify truffaut kitsch helvetica jean
-                      shorts edison bulb poutine next level humblebrag la croix
-                      adaptogen. <br><br>Hashtag poke literally locavore, beard
-                      marfa kogi bruh artisan succulents seitan tonx waistcoat
-                      chambray taxidermy. Same cred meggings 3 wolf moon lomo
-                      irony cray hell of bitters asymmetrical gluten-free art
-                      party raw denim chillwave tousled try-hard succulents
-                      street art.</p>
+                    <p>Crear una página web de ventas contigo puede ser
+                      beneficioso por varias razones:
+                      <br>
+                      <br>
+                      <p>Alcance amplio: Una página web de ventas te permitirá
+                        llegar a un público más amplio, sin restricciones
+                        geográficas. Podrás vender tus productos o servicios a
+                        nivel local, nacional e incluso internacional, lo que
+                        aumentará tus oportunidades de negocio.
+                        <br>
+
+                        Disponibilidad constante: Tu página web estará
+                        disponible las 24 horas del día, los 7 días de la
+                        semana. Esto significa que tus clientes podrán realizar
+                        compras en cualquier momento, lo que aumentará tus
+                        posibilidades de venta y generará ingresos incluso
+                        cuando no estés activamente involucrado.
+                        <br>
+                        Costos operativos reducidos: Al no requerir un espacio
+                        físico, los costos operativos de tu página web de ventas
+                        serán más bajos. No tendrás que pagar alquiler,
+                        servicios públicos o personal adicional, lo que te
+                        permitirá aumentar tus márgenes de beneficio.
+                        <br>
+                        Mayor visibilidad: Al tener una página web, podrás
+                        implementar estrategias de marketing digital para
+                        aumentar la visibilidad de tu marca. Podrás utilizar
+                        técnicas de SEO, publicidad en línea y redes sociales
+                        para atraer a más clientes potenciales y generar un
+                        mayor tráfico hacia tu página.
+                        <br>
+                        Personalización y segmentación: Tu página web de ventas
+                        te permitirá personalizar la experiencia del cliente y
+                        segmentar tu público objetivo. Podrás utilizar
+                        herramientas de análisis y seguimiento para conocer
+                        mejor los intereses y comportamientos de tus clientes,
+                        lo que te ayudará a crear estrategias de marketing más
+                        efectivas y aumentar tus ventas.
+                        <br>
+                        Flexibilidad y adaptabilidad: Tu página web de ventas te
+                        brindará flexibilidad y adaptabilidad a medida que tu
+                        negocio crezca. Podrás realizar actualizaciones y
+                        modificaciones de forma rápida y sencilla, agregar
+                        nuevos productos o servicios, y ajustar precios o
+                        promociones según tus necesidades y las demandas del
+                        mercado.
+                      </div>
+                      <div class="tab-pane fade" id="reviews" role="tabpanel"
+                        aria-labelledby="reviews-tab">
+                        <p>En resumen, crear una página web de ventas contigo te
+                          permitirá alcanzar un público más amplio, estar
+                          disponible las 24/7, reducir costos operativos,
+                          aumentar tu visibilidad, personalizar y segmentar tu
+                          público, así como adaptarte fácilmente a medida que tu
+                          negocio crece. Estas ventajas te ayudarán a impulsar
+                          tus ventas y alcanzar el éxito en el mundo digital.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="section categories related-games">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="section-heading">
-              <h6>Action</h6>
-              <h2>Related Games</h2>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="main-button">
-              <a href="shop.html">View All</a>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 col-xs-12">
-            <div class="item">
-              <h4>Action</h4>
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/categories-01.jpg" alt></a>
+        <div class="section categories related-wallpaper">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="section-heading">
+                  <h6>Anime</h6>
+                  <h2>Related wallpaper</h2>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 col-xs-12">
-            <div class="item">
-              <h4>Action</h4>
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/categories-05.jpg" alt></a>
+              <div class="col-lg-6">
+                <div class="main-button">
+                  <a href="shop.html">View All</a>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 col-xs-12">
-            <div class="item">
-              <h4>Action</h4>
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/categories-03.jpg" alt></a>
+              <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                  <h4>Anime</h4>
+                  <div class="thumb card-most">
+                    <a href="product-details.html"><img
+                        src="assets/images/fondos/power.jpg" alt></a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 col-xs-12">
-            <div class="item">
-              <h4>Action</h4>
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/categories-04.jpg" alt></a>
+              <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                  <h4>Anime</h4>
+                  <div class="thumb card-most">
+                    <a href="product-details.html"><img
+                        src="assets/images/fondos/Photoleap_21_09_2023_10_40_40_oAx2z-transformed.jpeg"
+                        alt></a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 col-xs-12">
-            <div class="item">
-              <h4>Action</h4>
-              <div class="thumb">
-                <a href="product-details.html"><img
-                    src="assets/images/categories-05.jpg" alt></a>
+              <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                  <h4>Anime</h4>
+                  <div class="thumb card-most">
+                    <a href="product-details.html"><img
+                        src="assets/images/fondos/1695346894042.jpg" alt></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                  <h4>Anime</h4>
+                  <div class="thumb card-most">
+                    <a href="product-details.html"><img
+                        src="assets/images/fondos/1695309308282.jpg" alt></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-sm-6 col-xs-12">
+                <div class="item">
+                  <h4>Anime</h4>
+                  <div class="thumb card-most">
+                    <a href="product-details.html"><img
+                        src="assets/images/fondos/1695336274715.jpg" alt></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <footer>
-      <div class="container">
-        <div class="col-lg-12">
-          <p>Copyright © 2048 LUGX Gaming Company. All rights reserved.
-            &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com"
-              target="_blank">Design: TemplateMo</a></p>
-        </div>
-      </div>
-    </footer>
+        <footer>
+          <div class="container">
+            <div class="col-lg-12">
+              <p>Copyright © 2022 Wallpaper World. All rights reserved.
+                &nbsp;&nbsp;
+                <a rel="nofollow" href target="_blank">Developer: Aj2Hidalgo</a></p>
+            </div>
+          </div>
+        </footer>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/counter.js"></script>
-    <script src="assets/js/custom.js"></script>
+        <!-- Scripts -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/owl-carousel.js"></script>
+        <script src="assets/js/counter.js"></script>
+        <script src="assets/js/custom.js"></script>
 
-  </body>
-</html>
+        <script>
+
+      $(document).ready(function() {
+        const registerButton = $("#registerButton");
+        const registerModal = $("#registerModal");
+        const closeButton = $(".close");
+      
+        registerButton.click(function() {
+          registerModal.css("display", "flex");
+        });
+      
+        closeButton.click(function() {
+          registerModal.hide();
+        });
+      
+        $(window).click(function(event) {
+          if (event.target == registerModal[0]) {
+            registerModal.hide();
+          }
+        });
+      });
+      
+    </script>
+
+      </body>
+    </html>
